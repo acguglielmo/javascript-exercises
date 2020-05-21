@@ -1,4 +1,4 @@
-function getFormattedTodayDate() {
+function getFormattedDate() {
 
     const dateTimeFormat = new Intl.DateTimeFormat('pt-BR', {
         year: 'numeric',
@@ -16,4 +16,4 @@ function getFormattedTodayDate() {
 
 }
 
-module.exports = getFormattedTodayDate;
+module.exports = getFormattedDate;
