@@ -1,4 +1,4 @@
-function calculate_triangle_area(a, b, c) {
+function calculate_triangle_area_by_herons_formula(a, b, c) {
 
     let s = (a + b + c) / 2; 
 
@@ -6,4 +6,4 @@ function calculate_triangle_area(a, b, c) {
 
 }
 
-module.exports = calculate_triangle_area
+module.exports = calculate_triangle_area_by_herons_formula
