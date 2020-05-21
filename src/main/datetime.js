@@ -10,7 +10,7 @@ function getFormattedTodayDate() {
         { value:day },,
         { value: month},,
         { value: year}
-    ] = dateTimeFormat.formatToParts( new Date() );
+    ] = dateTimeFormat.formatToParts( new Date("05-21-2020") );
 
     return `${day}/${month}/${year}`;
 
