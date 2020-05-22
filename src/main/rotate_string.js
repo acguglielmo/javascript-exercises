@@ -1,7 +1,5 @@
 function rotate(string, times) {
-  for (let i = 0; i < times; i++) {
-    rotateOneTime();
-  }
+  range().map(() => rotateOneTime());
 
   return string;
 
@@ -9,6 +7,10 @@ function rotate(string, times) {
     const lastCharacterIndex = string.length - 1;
     const lastCharacter = string.charAt(lastCharacterIndex);
     string = lastCharacter + string.substring(0, lastCharacterIndex);
+  }
+
+  function range() {
+    return [...Array(times).keys()];
   }
 }
 
