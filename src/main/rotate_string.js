@@ -1,5 +1,5 @@
 function rotate(string, times) {
-  range().map(() => rotateOneTime());
+  loop(times).map(() => rotateOneTime());
 
   return string;
 
@@ -9,7 +9,7 @@ function rotate(string, times) {
     string = lastCharacter + string.substring(0, lastCharacterIndex);
   }
 
-  function range() {
+  function loop(times) {
     return [...Array(times).keys()];
   }
 }
