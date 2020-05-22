@@ -1,15 +1,15 @@
 function rotate(string, times) {
   for (let i = 0; i < times; i++) {
-    string = rotateOneTime(string);
+    rotateOneTime();
   }
 
   return string;
 
-  function rotateOneTime(string) {
+  function rotateOneTime() {
     const stringLenght = string.length;
     const lastCharacterIndex = stringLenght - 1;
     const lastCharacter = string.charAt(lastCharacterIndex);
-    return lastCharacter + string.substring(0, lastCharacterIndex);
+    string = lastCharacter + string.substring(0, lastCharacterIndex);
   }
 }
 
