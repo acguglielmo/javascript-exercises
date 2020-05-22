@@ -1,5 +1,7 @@
 {
     "scripts": {
+        "lint": "eslint src",
+        "postlint": "echo ✅ lint valid",
         "test": "jest"
     },
     "devDependencies": {
