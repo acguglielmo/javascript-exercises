@@ -1,7 +1,7 @@
 const loop = require("../main/loop");
 
 function rotate(string, times) {
-  loop(times).map(() => rotateOneTime());
+  loop(times).map(rotateOneTime);
 
   return string;
 
