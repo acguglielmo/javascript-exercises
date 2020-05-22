@@ -1,11 +1,15 @@
+const loop = require("../main/loop");
+
 function rotate(string, times) {
-  for (let i = 0; i < times; i++) {
-    let stringLenght = string.length;
-    let lastCharacter = string.charAt(stringLenght - 1);
-    string = lastCharacter + string.substring(0, stringLenght - 1);
-  }
+  loop(times).map(() => rotateOneTime());
 
   return string;
+
+  function rotateOneTime() {
+    const lastCharacterIndex = string.length - 1;
+    const lastCharacter = string.charAt(lastCharacterIndex);
+    string = lastCharacter + string.substring(0, lastCharacterIndex);
+  }
 }
 
 module.exports = rotate;
