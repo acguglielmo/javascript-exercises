@@ -1,7 +1,7 @@
-const getFormattedDate = require('../main/datetime')
+/*global test, expect*/
 
-test('returns dd/MM/yyyy format', () => {
+const getFormattedDate = require("../main/datetime");
 
-    expect(getFormattedDate()).toBe("21/05/2020");
-
-})
+test("returns dd/MM/yyyy format", () => {
+  expect(getFormattedDate()).toBe("21/05/2020");
+});
