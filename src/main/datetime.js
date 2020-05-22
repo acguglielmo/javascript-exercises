@@ -1,4 +1,4 @@
-function getFormattedDate() {
+function getFormattedDate(dateAsString) {
   const dateTimeFormat = new Intl.DateTimeFormat("pt-BR", {
     year: "numeric",
     month: "2-digit",
@@ -11,7 +11,7 @@ function getFormattedDate() {
     { value: month },
     ,
     { value: year },
-  ] = dateTimeFormat.formatToParts(new Date("05-21-2020"));
+  ] = dateTimeFormat.formatToParts(new Date(dateAsString));
 
   return `${day}/${month}/${year}`;
 }
