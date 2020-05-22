@@ -6,8 +6,7 @@ function rotate(string, times) {
   return string;
 
   function rotateOneTime() {
-    const stringLenght = string.length;
-    const lastCharacterIndex = stringLenght - 1;
+    const lastCharacterIndex = string.length - 1;
     const lastCharacter = string.charAt(lastCharacterIndex);
     string = lastCharacter + string.substring(0, lastCharacterIndex);
   }
